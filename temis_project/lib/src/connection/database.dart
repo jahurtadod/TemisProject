@@ -3,19 +3,17 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:temis_project/src/models/business_logic/audiencia.dart';
 
 class DataBase {
-
-  static const jsonAudiencia= 'assets/audiencia.json';
+  static const jsonAudiencia = 'assets/repositorio_local/audiencia.json';
 
   final Client _client = Client();
 
-  Future<List<Audiencia>> getPhotos() async {
-    List<Audiencia> photoList;
+  Future<List<Audiencia>> getAudencia() async {
+    List<Audiencia> audienciaList;
 
-    final response = await _client.get(jsonAudiencia);
+    audienciaList =
+        audienciaFromJson(await rootBundle.loadString(jsonAudiencia))
+            as List<Audiencia>;
 
-    photoList = welcomeFromJson(response.body);
-
-    return photoList;
-
+    return audienciaList;
   }
 }

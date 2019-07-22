@@ -1,0 +1,62 @@
+{
+  "nombre": "Formulación de cargos",
+  "descripcion": "El día 17 de junio del presente año en el cantón Quito, provincia de Pichincha el señor Juan Plaza se dirigía a su trabajo como de costumbre. De repente se encuentra por casualidad con el señor José Anteparra, con quien mantiene una breve conversación . El señor José Anteparra se retira del lugar, alejándose en dirección a la calle mariana de Jesús, no habían pasado mas de 5 minutos cuando es detenido por el oficial Juan Mejía",
+  "ruta": [
+    {
+      "nombre": "Formulación de cargos",
+      "rol": "Fiscalia",
+      "dialogo": [
+        {
+          "nombre": "Damos comienzo a la presente audiencia, el propósito es formular cargos, señora secretaria, verifique la presencia de las partes procesales",
+          "descripcion": "",
+          "rol": "Juez"
+        },
+        {
+          "nombre": "Declaro instalada la presente audiencia",
+          "descripcion": "",
+          "rol": "Juez"
+        },
+        {
+          "nombre": "¿Existen criterios sobre legalidad de la aprehensión?",
+          "descripcion": "",
+          "rol": "Juez"
+        },
+        {
+          "nombre": "Siendo así, entonces declaro la legalidad de la aprehensión",
+          "descripcion": "",
+          "rol": "Juez"
+        },
+        {
+          "nombre": "No tengo nada que alegar",
+          "descripcion": "",
+          "rol": "Defensa"
+        },
+        {
+          "nombre": "No tengo nada que alegar",
+          "descripcion": "",
+          "rol": "Fiscalia"
+        },
+        {
+          "nombre": "Ahora procederé a señalar las pruebas que fundamenten mi acusación",
+          "descripcion": "",
+          "rol": "Fiscalia"
+        }
+      ],
+      "opcion": [
+        {
+          "pregunta": "",
+          "opcion": [
+            "Art. 221.- Organización o financiamiento para la producción o tráfico ilícitos de sustancias catalogadas sujetas a fiscalización",
+            "Art. 220.- Tráfico ilícito de sustancias catalogadas sujetas a fiscalización",
+            "Art. 223.- Suministro de sustancias estupefacientes, psicotrópicas o preparados que las contengan"
+          ],
+          "respuesta": ""
+        }
+      ],
+      "sentencia": {
+        "resolucion": "",
+        "descripcion": ""
+      }
+    }
+  ]
+}

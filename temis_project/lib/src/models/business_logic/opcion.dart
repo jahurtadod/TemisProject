@@ -6,7 +6,7 @@ String opcionToJson(Opcion data) => json.encode(data.toJson());
 
 class Opcion {
   String pregunta;
-  String opcion;
+  List<String> opcion;
   String respuesta;
 
   Opcion({
@@ -16,14 +16,14 @@ class Opcion {
   });
 
   factory Opcion.fromJson(Map<String, dynamic> json) => new Opcion(
-    pregunta: json["pregunta"],
-    opcion: json["opcion"],
-    respuesta: json["respuesta"],
-  );
+        pregunta: json["pregunta"],
+        opcion: new List<String>.from(json["opcion"].map((x) => x)),
+        respuesta: json["respuesta"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "pregunta": pregunta,
-    "opcion": opcion,
-    "respuesta": respuesta,
-  };
+        "pregunta": pregunta,
+        "opcion": new List<dynamic>.from(opcion.map((x) => x)),
+        "respuesta": respuesta,
+      };
 }

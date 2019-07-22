@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 
 import 'audience_page.dart';
+import 'info_page.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -13,7 +14,12 @@ class Homepage extends StatelessWidget {
         elevation: 0.0,
         leading: IconButton(
           icon: const Icon(Icons.help_outline),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => InfoPage()));
+          },
         ),
       ),
       body: Center(
@@ -119,7 +125,7 @@ class Homepage extends StatelessWidget {
                 child: Padding(
                     padding: EdgeInsets.only(top: 10, left: 30, right: 30),
                     child: FAProgressBar(
-                      currentValue: 20,
+                      currentValue: 5,
                       size: 20,
                       borderRadius: 10,
                       progressColor: const Color(0xffffba10),

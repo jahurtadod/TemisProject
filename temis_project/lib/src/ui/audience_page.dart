@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:temis_project/src/connection/database.dart';
+import 'package:temis_project/src/ui/audience_game.dart';
 
 class AudiencePage extends StatelessWidget {
+  final PageController ctrl = PageController();
+  final DataBase api = DataBase();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,12 +115,7 @@ class AudiencePage extends StatelessWidget {
                   width: 90,
                   height: 90,
                   child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => AudiencePage()));
-                    },
+                    onTap: () {},
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -156,12 +156,7 @@ class AudiencePage extends StatelessWidget {
                   width: 90,
                   height: 90,
                   child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => AudiencePage()));
-                    },
+                    onTap: () {},
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -180,7 +175,7 @@ class AudiencePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        Text("Juez",
+                        Text("Defensa",
                             style: const TextStyle(
                                 color: const Color(0xffffffff),
                                 fontFamily: "Comfortaa",
@@ -206,7 +201,7 @@ class AudiencePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => AudiencePage()));
+                              builder: (context) => AudienceGame()));
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -226,7 +221,7 @@ class AudiencePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        Text("Juez",
+                        Text("Fiscalia",
                             style: const TextStyle(
                                 color: const Color(0xffffffff),
                                 fontFamily: "Comfortaa",
